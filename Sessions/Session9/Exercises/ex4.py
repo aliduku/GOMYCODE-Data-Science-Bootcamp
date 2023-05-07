@@ -1,0 +1,5 @@
+age = int(input("Please enter your age: "))
+months = 12 * (90 - age)
+weeks = 52 * (90 - age)
+days = 365 * (90 - age)
+print(f"You have {int(months)} months, {int(weeks)} weeks, or {int(days)} days.")
