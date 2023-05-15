@@ -3,15 +3,7 @@ import pandas_profiling as pp
 import webbrowser
 
 # Read the dataset
-data = pd.read_csv("covid_19_data.csv")
-
-# Get a quick overview of the data
-print(data.head(), end = "\n\n")
-print(data.info(), end = "\n\n")
-print(data.describe(include = "all"), end = "\n\n")
-
-# Look for missing values in the dataset.
-print("Number of missing values:\n", data.isnull().sum(), end = "\n\n")
+data = pd.read_csv("adult.csv")
 
 # Generate the profile report
 profile = pp.ProfileReport(data, title = 'Pandas Profiling Report')
